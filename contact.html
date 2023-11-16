@@ -7,6 +7,7 @@
     <title>Site immobilier</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/informations.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
@@ -25,11 +26,48 @@
                 <a href="./portfolio.html">Portfolio</a>
             </li>
             <li class="item-nav">
-                <a href="./contact">Contact</a>
+                <a href="./contact.html">Contact</a>
             </li>
         </ul>
     </div>
 
+    <h1 class="titre-contact">Entrons en contact !</h1>
+    <p class="contact-sous-titre">Contactez-nous par mail, téléphone ou par la poste.</p>
+    <div class="trois-contacts">
+        <div class="box">
+            <img src="./ressources/mail.png" alt="icône email">
+            <span>contact@heracles.com</span>
+        </div>
+        <div class="box">
+            <img src="./ressources/phone.png" alt="icône telephone">
+            <span>07 53 89 21 98</span>
+        </div>
+        <div class="box">
+            <img src="./ressources/map.png" alt="icône adresse">
+            <span>8 rue de Paris <br>75000 Paris</span>
+        </div>
+    </div>
+    <form>
+        <h2>Parlez-nous de vos envies.</h2>
+        <label for="prenom" class="label-input">Votre prénom</label>
+        <input type="text" id="prenom" placeholder="Votre prénom">
+        <label for="nom" class="label-input">Votre nom</label>
+        <input type="text" id="nom" placeholder="Votre nom">
+        <label for="tel" class="label-input">Votre téléphone</label>
+        <input type="tel" id="tel" placeholder="Votre téléphone">
+        <p class="titre-check">Type de bien : </p>
+        <div class="groupe-check">
+            <label for="louer" class="label-check">Louer</label>
+            <input type="checkbox" id="louer" name="louer">
+        </div>
+        <div class="groupe-check">
+            <label for="acheter" class="label-check">Acheter</label>
+            <input type="checkbox" id="acheter" name="acheter">
+        </div>
+        <label for="txt">Message</label>
+        <textarea id="txt" placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
     <footer>
         Tous droits réservés &copy;
     </footer>
